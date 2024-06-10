@@ -1,0 +1,22 @@
+To run Zookeeper and Kafka in Windows, you can follow these steps:
+Open a PowerShell prompt.
+Change the directory to the Kafka installation directory.
+Run the following command to start Zookeeper:
+Code
+
+.\bin\windows\zookeeper-server-start.bat .\config\zookeeper.properties
+Run the following command to start Kafka:
+Code
+
+.\bin\windows\kafka-server-start.bat .\config\server.properties
+You can verify that Zookeeper and Kafka are running by using the following commands:
+Code
+
+.\bin\windows\zookeeper-server-status.bat
+.\bin\windows\kafka-server-status.bat
+To stop Zookeeper and Kafka, run the following commands:
+Code
+
+.\bin\windows\zookeeper-server-stop.bat
+.\bin\windows\kafka-server-stop.bat
+Please note that these are just the basic steps for running Zookeeper and Kafka in Windows. There are many other options and configuration settings that you may need to consider depending on your specific needs.
